@@ -8,34 +8,13 @@
         "mid": {
         "type": ["null", "string"]
         },
-        "num_of_cancelled_items": {
-        "type": ["null", "string"]
-        },
         "num_of_clicks": {
         "type": ["null", "string"]
         },
         "num_of_impressions": {
         "type": ["null", "string"]
         },
-        "num_of_items": {
-        "type": ["null", "string"]
-        },
-        "num_of_net_items": {
-        "type": ["null", "string"]
-        },
         "num_of_orders": {
-        "type": ["null", "string"]
-        },
-        "adjusted_commission": {
-        "type": ["null", "string"]
-        },
-        "average_item_value": {
-        "type": ["null", "string"]
-        },
-        "average_order_value": {
-        "type": ["null", "string"]
-        },
-        "baseline_commission": {
         "type": ["null", "string"]
         },
         "gross_sales": {
