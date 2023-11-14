@@ -1,0 +1,73 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "\ufeffadvertiser_name": {
+        "type": ["null", "string"]
+        },
+        "mid": {
+        "type": ["null", "string"]
+        },
+        "num_of_cancelled_items": {
+        "type": ["null", "string"]
+        },
+        "num_of_clicks": {
+        "type": ["null", "string"]
+        },
+        "num_of_impressions": {
+        "type": ["null", "string"]
+        },
+        "num_of_items": {
+        "type": ["null", "string"]
+        },
+        "num_of_net_items": {
+        "type": ["null", "string"]
+        },
+        "num_of_orders": {
+        "type": ["null", "string"]
+        },
+        "adjusted_commission": {
+        "type": ["null", "string"]
+        },
+        "average_item_value": {
+        "type": ["null", "string"]
+        },
+        "average_order_value": {
+        "type": ["null", "string"]
+        },
+        "baseline_commission": {
+        "type": ["null", "string"]
+        },
+        "gross_sales": {
+        "type": ["null", "string"]
+        },
+        "sales": {
+        "type": ["null", "string"]
+        },
+        "gross_total_commissions": {
+        "type": ["null", "string"]
+        },
+        "total_commission": {
+        "type": ["null", "string"]
+        },
+        "member_id_(u1)": {
+        "type": ["null", "string"]
+        },
+        "product_name": {
+        "type": ["null", "string"]
+        },
+        "transaction_date": {
+        "type": ["null", "string"],
+        "format": "date"
+        },
+        "referrer_url": {
+        "type": ["null", "string"]
+        },
+        "order_id": {
+        "type": ["null", "string"]
+        },
+        "transaction_id": {
+        "type": ["null", "string"]
+        }
+    }
+}

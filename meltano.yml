@@ -1,0 +1,39 @@
+version: 1
+default_environment: test
+send_anonymous_usage_stats: true
+project_id: 0bc36193-30d9-4f36-9802-5c9500a417cd
+plugins:
+  extractors:
+  - name: tap-rakuten
+    namespace: tap_rakuten
+    pip_url: -e .
+    capabilities:
+    - state
+    - catalog
+    - discover
+    - about
+    - stream-maps
+    settings:
+    - name: auth_token
+    - name: region
+    - name: report_slug
+    - name: start_date
+    - name: date_type
+    config:
+      start_date: '2023-07-20'
+      auth_token: <EXAMPLE_TOKEN>
+      region: en
+      date_type: transaction
+      report_slug: api-orders-report-v2
+      stream_maps:
+        Report:
+          advertiser_name: "record['\ufeffadvertiser_name']"
+          "\ufeffadvertiser_name": __NULL__
+          member_id_u1: "record['member_id_(u1)']"
+          "member_id_(u1)": __NULL__
+  loaders:
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl
+environments:
+- name: test
