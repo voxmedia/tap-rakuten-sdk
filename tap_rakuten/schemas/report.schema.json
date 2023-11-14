@@ -6,28 +6,28 @@
         "type": ["null", "string"]
         },
         "mid": {
-        "type": ["null", "string"]
+        "type": ["null", "integer"]
         },
         "num_of_clicks": {
-        "type": ["null", "string"]
+        "type": ["null", "integer"]
         },
         "num_of_impressions": {
-        "type": ["null", "string"]
+        "type": ["null", "integer"]
         },
         "num_of_orders": {
-        "type": ["null", "string"]
+        "type": ["null", "integer"]
         },
         "gross_sales": {
-        "type": ["null", "string"]
+        "type": ["null", "number"]
         },
         "sales": {
-        "type": ["null", "string"]
+        "type": ["null", "number"]
         },
         "gross_total_commissions": {
-        "type": ["null", "string"]
+        "type": ["null", "number"]
         },
         "total_commission": {
-        "type": ["null", "string"]
+        "type": ["null", "number"]
         },
         "member_id_(u1)": {
         "type": ["null", "string"]
@@ -37,7 +37,7 @@
         },
         "transaction_date": {
         "type": ["null", "string"],
-        "format": "date"
+        "format": "date-time"
         },
         "referrer_url": {
         "type": ["null", "string"]

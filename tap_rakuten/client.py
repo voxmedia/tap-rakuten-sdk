@@ -155,5 +155,9 @@ class RakutenStream(RESTStream):
         new_row = {}
         for key, value in row.items():
             new_row[key.lower().replace(' ', '_').replace('#', 'num')] = value
-        new_row['transaction_date'] = pendulum.from_format(new_row['transaction_date'], 'M/D/YY').format('YYYY-MM-DD')
+        new_row['transaction_date'] = pendulum.from_format(new_row['transaction_date'], 'M/D/YY').format('YYYY-MM-DD HH:mm:ss')
+        for int_col in ['mid', 'num_of_impressions', 'num_of_clicks', 'num_of_orders']:
+            new_row[int_col] = int(new_row[int_col].replace(',', '').replace('$', ''))
+        for float_col in ['gross_sales', 'sales', 'gross_total_commissions', 'total_commission']:
+            new_row[float_col] = float(new_row[float_col].replace(',', '').replace('$', ''))
         return new_row
